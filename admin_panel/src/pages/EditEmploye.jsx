@@ -114,7 +114,7 @@ const EditEmployee = () => {
           imageFormData.append("upload_preset", "socialmedia_image");
 
           const response = await axios.post(
-            `https://api.cloudinary.com/v1_1/dswd4mkqr/image/upload`,
+            `https://api.cloudinary.com/v1_1/{$}/image/upload`,
             imageFormData
           );
 
